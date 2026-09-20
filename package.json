@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "npm run css:build && next dev",
     "build": "npm run css:build && next build",
-    "css:build": "tailwindcss -i ./src/styles/globals.css -o ./public/styles.css",
+    "css:build": "tailwindcss -i ./src/styles/globals.css -o ./public/styles.css && node scripts/sort-screens.js",
     "start": "next start",
     "lint": "next lint"
   },
