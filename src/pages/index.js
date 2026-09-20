@@ -3,7 +3,6 @@ import Image from "next/image";
 import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import { LinkArrow } from "@/components/Icons";
-import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
 import PeekingAstronaut from "@/components/Astronaut";
 import ProfilePhotoHover from "@/components/ProfilePhotoHover";
@@ -75,7 +74,6 @@ export default function Home() {
           </div>
         </Layout>
 
-        <HireMe />
         <div className="absolute right-8 bottom-24 inline-block w-24 md:hidden">
           <Image src={lightBulb} alt="Akbar" className="w-full h-auto" />
         </div>
