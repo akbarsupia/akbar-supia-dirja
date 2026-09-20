@@ -2000,16 +2000,12 @@ body:is(.dark *) {
     background-image: repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 80px);
   }
 }@media (max-width: 767px) {
-  .md\:absolute {
-    position: absolute;
-  }
-
   .md\:-right-2 {
     right: -0.5rem;
   }
 
-  .md\:bottom-auto {
-    bottom: auto;
+  .md\:bottom-4 {
+    bottom: 1rem;
   }
 
   .md\:left-\[30px\] {
@@ -2020,12 +2016,12 @@ body:is(.dark *) {
     left: auto;
   }
 
-  .md\:right-8 {
-    right: 2rem;
+  .md\:right-4 {
+    right: 1rem;
   }
 
-  .md\:top-0 {
-    top: 0px;
+  .md\:top-auto {
+    top: auto;
   }
 
   .md\:order-1 {
@@ -2160,10 +2156,6 @@ body:is(.dark *) {
     line-height: 1.75rem;
   }
 }@media (max-width: 639px) {
-  .sm\:right-0 {
-    right: 0px;
-  }
-
   .sm\:right-3 {
     right: 0.75rem;
   }
