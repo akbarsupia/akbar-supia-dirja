@@ -7,3 +7,44 @@
     @apply bg-light dark:bg-dark text-dark dark:text-light;
   }
 }
+
+@keyframes rocket-fly {
+  0% {
+    transform: translate3d(-25vw, 8px, 0) rotate(-6deg);
+  }
+  50% {
+    transform: translate3d(50vw, -26px, 0) rotate(-6deg);
+  }
+  100% {
+    transform: translate3d(125vw, 8px, 0) rotate(-6deg);
+  }
+}
+
+.animate-rocket {
+  animation: rocket-fly 18s linear infinite;
+  will-change: transform;
+}
+
+@keyframes rocket-fly-reverse {
+  0% {
+    transform: translate3d(125vw, 8px, 0) rotate(6deg);
+  }
+  50% {
+    transform: translate3d(50vw, -26px, 0) rotate(6deg);
+  }
+  100% {
+    transform: translate3d(-25vw, 8px, 0) rotate(6deg);
+  }
+}
+
+.animate-rocket-reverse {
+  animation: rocket-fly-reverse 22s linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-rocket,
+  .animate-rocket-reverse {
+    animation: none;
+  }
+}
