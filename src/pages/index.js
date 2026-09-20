@@ -6,7 +6,10 @@ import { LinkArrow } from "@/components/Icons";
 import HireMe from "@/components/HireMe";
 import TransitionEffect from "@/components/TransitionEffect";
 import PeekingAstronaut from "@/components/Astronaut";
-import profilePic from "../../public/images/profile/Foto Akbr.jpeg";
+import ProfilePhotoHover from "@/components/ProfilePhotoHover";
+import photoLight from "../../public/images/profile/foto akbar kameja hitam.PNG";
+import photoDark from "../../public/images/profile/Foto akbar kameja putih.PNG";
+import astroPhoto from "../../public/images/profile/Foto Astronout.PNG";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
 
 export default function Home() {
@@ -27,11 +30,12 @@ export default function Home() {
               <div className="relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light sm:p-4">
                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
                 <div className="relative inline-block">
-                  <Image
-                    src={profilePic}
+                  <ProfilePhotoHover
+                    photoLight={photoLight}
+                    photoDark={photoDark}
+                    astro={astroPhoto}
                     alt="Akbar Supia Dirja"
-                    className="relative z-10 mx-auto h-auto w-auto max-h-[70vh] max-w-[460px] rounded-2xl object-contain"
-                    priority
+                    className="mx-auto h-auto w-auto max-h-[70vh] max-w-[460px]"
                     sizes="(max-width: 1024px) 50vw, 100vw"
                   />
                 </div>

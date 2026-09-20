@@ -1105,6 +1105,10 @@ body:is(.dark *) {
   animation: spin 8s linear infinite;
 }
 
+.cursor-none {
+  cursor: none;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1255,6 +1259,10 @@ body:is(.dark *) {
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(27 27 27 / var(--tw-border-opacity, 1));
+}
+
+.border-primary\/60 {
+  border-color: rgb(182 62 150 / 0.6);
 }
 
 .border-transparent {
@@ -1769,6 +1777,10 @@ body:is(.dark *) {
 .dark\:border-light:is(.dark *) {
   --tw-border-opacity: 1;
   border-color: rgb(245 245 245 / var(--tw-border-opacity, 1));
+}
+
+.dark\:border-primaryDark\/60:is(.dark *) {
+  border-color: rgb(88 230 217 / 0.6);
 }
 
 .dark\:bg-dark:is(.dark *) {
