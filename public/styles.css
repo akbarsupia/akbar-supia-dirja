@@ -720,6 +720,10 @@ body:is(.dark *) {
   top: 16%;
 }
 
+.top-\[28\%\] {
+  top: 28%;
+}
+
 .top-\[40\%\] {
   top: 40%;
 }
@@ -762,6 +766,10 @@ body:is(.dark *) {
 
 .z-\[100\] {
   z-index: 100;
+}
+
+.z-\[200\] {
+  z-index: 200;
 }
 
 .col-span-12 {
@@ -913,6 +921,10 @@ body:is(.dark *) {
 
 .h-20 {
   height: 5rem;
+}
+
+.h-32 {
+  height: 8rem;
 }
 
 .h-\[103\%\] {
@@ -1154,6 +1166,16 @@ body:is(.dark *) {
   }
 }
 
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .animate-spin-slow {
   animation: spin 8s linear infinite;
 }
@@ -1220,6 +1242,10 @@ body:is(.dark *) {
 
 .gap-3 {
   gap: 0.75rem;
+}
+
+.gap-6 {
+  gap: 1.5rem;
 }
 
 .gap-x-3 {
@@ -1321,6 +1347,10 @@ body:is(.dark *) {
   border-style: solid;
 }
 
+.border-dashed {
+  border-style: dashed;
+}
+
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(27 27 27 / var(--tw-border-opacity, 1));
@@ -1328,6 +1358,11 @@ body:is(.dark *) {
 
 .border-dark\/20 {
   border-color: rgb(27 27 27 / 0.2);
+}
+
+.border-primary {
+  --tw-border-opacity: 1;
+  border-color: rgb(182 62 150 / var(--tw-border-opacity, 1));
 }
 
 .border-primary\/60 {
@@ -1345,6 +1380,10 @@ body:is(.dark *) {
 
 .bg-dark\/10 {
   background-color: rgb(27 27 27 / 0.1);
+}
+
+.bg-dark\/15 {
+  background-color: rgb(27 27 27 / 0.15);
 }
 
 .bg-dark\/30 {
@@ -1607,6 +1646,11 @@ body:is(.dark *) {
   line-height: 2.5rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .text-7xl {
   font-size: 4.5rem;
   line-height: 1;
@@ -1733,6 +1777,10 @@ body:is(.dark *) {
 
 .opacity-70 {
   opacity: 0.7;
+}
+
+.opacity-80 {
+  opacity: 0.8;
 }
 
 .opacity-\[0\.12\] {
@@ -1947,6 +1995,11 @@ body:is(.dark *) {
   border-color: rgb(245 245 245 / 0.2);
 }
 
+.dark\:border-primaryDark:is(.dark *) {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 230 217 / var(--tw-border-opacity, 1));
+}
+
 .dark\:border-primaryDark\/60:is(.dark *) {
   border-color: rgb(88 230 217 / 0.6);
 }
@@ -1963,6 +2016,10 @@ body:is(.dark *) {
 
 .dark\:bg-light\/10:is(.dark *) {
   background-color: rgb(245 245 245 / 0.1);
+}
+
+.dark\:bg-light\/15:is(.dark *) {
+  background-color: rgb(245 245 245 / 0.15);
 }
 
 .dark\:bg-light\/75:is(.dark *) {

@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import HireMe from "@/components/HireMe";
 import ScrollUI from "@/components/ScrollUI";
 import CommandPalette from "@/components/CommandPalette";
+import Preloader from "@/components/Preloader";
 import AstronautBackground from "@/components/AstronautBackground";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
@@ -41,6 +42,7 @@ export default function App({ Component, pageProps }) {
         className={`${montserrat.variable} font-mont relative w-full min-h-screen`}
       >
         <AstronautBackground />
+        <Preloader />
         <ScrollUI />
         <CommandPalette />
         <div className="relative z-10">
