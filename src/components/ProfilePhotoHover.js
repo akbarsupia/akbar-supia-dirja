@@ -74,12 +74,13 @@ const ProfilePhotoHover = ({ photoLight, photoDark, astro, alt = "", className =
         animate={{ opacity: active ? 1 : 0 }}
         transition={{ duration: 0.35, ease: EASE }}
       >
+        <div className="absolute inset-0 rounded-2xl bg-dark dark:bg-light" />
         <Image
           src={astro}
           alt=""
           fill
           sizes={sizes}
-          className="rounded-2xl object-contain"
+          className="rounded-2xl object-contain -translate-y-[5%]"
         />
       </motion.div>
 
