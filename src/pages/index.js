@@ -29,16 +29,14 @@ export default function Home() {
             <div className="w-1/2 lg:w-full flex items-center justify-center">
               <div className="relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:bg-dark dark:border-light sm:p-4">
                 <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
-                <div className="relative inline-block">
-                  <ProfilePhotoHover
-                    photoLight={photoLight}
-                    photoDark={photoDark}
-                    astro={astroPhoto}
-                    alt="Akbar Supia Dirja"
-                    className="mx-auto h-auto w-auto max-h-[70vh] max-w-[460px]"
-                    sizes="(max-width: 1024px) 50vw, 100vw"
-                  />
-                </div>
+                <ProfilePhotoHover
+                  photoLight={photoLight}
+                  photoDark={photoDark}
+                  astro={astroPhoto}
+                  alt="Akbar Supia Dirja"
+                  className="mx-auto w-full h-auto max-h-[70vh] max-w-[460px]"
+                  sizes="(max-width: 1024px) 50vw, 100vw"
+                />
                 <PeekingAstronaut
                   className="bottom-full right-10 w-24 mb-[-2px] sm:right-4 sm:w-16"
                   duration={9}

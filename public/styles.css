@@ -996,10 +996,6 @@ body:is(.dark *) {
   width: 75%;
 }
 
-.w-auto {
-  width: auto;
-}
-
 .w-full {
   width: 100%;
 }

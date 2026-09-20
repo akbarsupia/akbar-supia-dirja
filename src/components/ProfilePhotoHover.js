@@ -47,7 +47,7 @@ const ProfilePhotoHover = ({ photoLight, photoDark, astro, alt = "", className =
   return (
     <div
       ref={ref}
-      className={`group relative z-10 inline-block cursor-none rounded-2xl ${className}`}
+      className={`group relative z-10 block cursor-none rounded-2xl ${className}`}
       onMouseEnter={handleEnter}
       onMouseMove={handleMove}
       onMouseLeave={handleLeave}
@@ -55,14 +55,14 @@ const ProfilePhotoHover = ({ photoLight, photoDark, astro, alt = "", className =
       <Image
         src={photoLight}
         alt={alt}
-        className="block w-auto h-auto max-h-[70vh] max-w-[460px] rounded-2xl object-contain dark:hidden"
+        className="block w-full h-auto max-h-[70vh] max-w-[460px] rounded-2xl object-contain dark:hidden"
         priority
         sizes={sizes}
       />
       <Image
         src={photoDark}
         alt={alt}
-        className="hidden dark:block w-auto h-auto max-h-[70vh] max-w-[460px] rounded-2xl object-contain"
+        className="hidden dark:block w-full h-auto max-h-[70vh] max-w-[460px] rounded-2xl object-contain"
         priority
         sizes={sizes}
       />
