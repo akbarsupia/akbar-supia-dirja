@@ -4,6 +4,7 @@ import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import HireMe from "@/components/HireMe";
 import ScrollUI from "@/components/ScrollUI";
+import CommandPalette from "@/components/CommandPalette";
 import AstronautBackground from "@/components/AstronautBackground";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
@@ -41,6 +42,7 @@ export default function App({ Component, pageProps }) {
       >
         <AstronautBackground />
         <ScrollUI />
+        <CommandPalette />
         <div className="relative z-10">
           <NavBar />
           <AnimatePresence mode="wait">

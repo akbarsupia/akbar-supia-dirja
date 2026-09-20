@@ -760,6 +760,10 @@ body:is(.dark *) {
   z-index: 50;
 }
 
+.z-\[100\] {
+  z-index: 100;
+}
+
 .col-span-12 {
   grid-column: span 12 / span 12;
 }
@@ -936,6 +940,10 @@ body:is(.dark *) {
   height: 100vh;
 }
 
+.max-h-80 {
+  max-height: 20rem;
+}
+
 .max-h-\[70vh\] {
   max-height: 70vh;
 }
@@ -1046,6 +1054,10 @@ body:is(.dark *) {
 
 .max-w-\[460px\] {
   max-width: 460px;
+}
+
+.max-w-lg {
+  max-width: 32rem;
 }
 
 .origin-left {
@@ -1237,6 +1249,10 @@ body:is(.dark *) {
   overflow: hidden;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1281,12 +1297,20 @@ body:is(.dark *) {
   border-width: 2px;
 }
 
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-b-4 {
   border-bottom-width: 4px;
 }
 
 .border-r-4 {
   border-right-width: 4px;
+}
+
+.border-t {
+  border-top-width: 1px;
 }
 
 .border-t-2 {
@@ -1300,6 +1324,10 @@ body:is(.dark *) {
 .border-dark {
   --tw-border-opacity: 1;
   border-color: rgb(27 27 27 / var(--tw-border-opacity, 1));
+}
+
+.border-dark\/20 {
+  border-color: rgb(27 27 27 / 0.2);
 }
 
 .border-primary\/60 {
@@ -1331,6 +1359,10 @@ body:is(.dark *) {
   background-color: rgb(27 27 27 / 0.5);
 }
 
+.bg-dark\/60 {
+  background-color: rgb(27 27 27 / 0.6);
+}
+
 .bg-dark\/90 {
   background-color: rgb(27 27 27 / 0.9);
 }
@@ -1352,6 +1384,10 @@ body:is(.dark *) {
 .bg-primaryDark {
   --tw-bg-opacity: 1;
   background-color: rgb(88 230 217 / var(--tw-bg-opacity, 1));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-circularLight {
@@ -1491,6 +1527,11 @@ body:is(.dark *) {
   padding-bottom: 0.5rem;
 }
 
+.py-2\.5 {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+}
+
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -1501,9 +1542,18 @@ body:is(.dark *) {
   padding-bottom: 8rem;
 }
 
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.pb-1 {
+  padding-bottom: 0.25rem;
 }
 
 .pl-6 {
@@ -1516,6 +1566,14 @@ body:is(.dark *) {
 
 .pt-16 {
   padding-top: 4rem;
+}
+
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
+.pt-\[18vh\] {
+  padding-top: 18vh;
 }
 
 .\!text-left {
@@ -1557,6 +1615,10 @@ body:is(.dark *) {
 .text-8xl {
   font-size: 6rem;
   line-height: 1;
+}
+
+.text-\[11px\] {
+  font-size: 11px;
 }
 
 .text-base {
@@ -1604,6 +1666,10 @@ body:is(.dark *) {
   text-transform: capitalize;
 }
 
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(27 27 27 / var(--tw-text-opacity, 1));
@@ -1611,6 +1677,10 @@ body:is(.dark *) {
 
 .text-dark\/40 {
   color: rgb(27 27 27 / 0.4);
+}
+
+.text-dark\/50 {
+  color: rgb(27 27 27 / 0.5);
 }
 
 .text-dark\/75 {
@@ -1690,6 +1760,11 @@ body:is(.dark *) {
 .shadow-dark {
   --tw-shadow-color: #1b1b1b;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .filter {
@@ -1793,6 +1868,14 @@ body:is(.dark *) {
   }
 }
 
+.placeholder\:text-dark\/40::-moz-placeholder {
+  color: rgb(27 27 27 / 0.4);
+}
+
+.placeholder\:text-dark\/40::placeholder {
+  color: rgb(27 27 27 / 0.4);
+}
+
 .first\:mt-0:first-child {
   margin-top: 0px;
 }
@@ -1860,6 +1943,10 @@ body:is(.dark *) {
   border-color: rgb(245 245 245 / var(--tw-border-opacity, 1));
 }
 
+.dark\:border-light\/20:is(.dark *) {
+  border-color: rgb(245 245 245 / 0.2);
+}
+
 .dark\:border-primaryDark\/60:is(.dark *) {
   border-color: rgb(88 230 217 / 0.6);
 }
@@ -1880,6 +1967,11 @@ body:is(.dark *) {
 
 .dark\:bg-light\/75:is(.dark *) {
   background-color: rgb(245 245 245 / 0.75);
+}
+
+.dark\:bg-primaryDark:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(88 230 217 / var(--tw-bg-opacity, 1));
 }
 
 .dark\:bg-circularDark:is(.dark *) {
@@ -1920,6 +2012,10 @@ body:is(.dark *) {
   color: rgb(245 245 245 / 0.4);
 }
 
+.dark\:text-light\/50:is(.dark *) {
+  color: rgb(245 245 245 / 0.5);
+}
+
 .dark\:text-light\/75:is(.dark *) {
   color: rgb(245 245 245 / 0.75);
 }
@@ -1932,6 +2028,14 @@ body:is(.dark *) {
 .dark\:invert:is(.dark *) {
   --tw-invert: invert(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.dark\:placeholder\:text-light\/40:is(.dark *)::-moz-placeholder {
+  color: rgb(245 245 245 / 0.4);
+}
+
+.dark\:placeholder\:text-light\/40:is(.dark *)::placeholder {
+  color: rgb(245 245 245 / 0.4);
 }
 
 .hover\:dark\:border-light:is(.dark *):hover {
