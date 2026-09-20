@@ -3,6 +3,7 @@ import Head from "next/head";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import HireMe from "@/components/HireMe";
+import ScrollUI from "@/components/ScrollUI";
 import AstronautBackground from "@/components/AstronautBackground";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
@@ -39,6 +40,7 @@ export default function App({ Component, pageProps }) {
         className={`${montserrat.variable} font-mont relative w-full min-h-screen`}
       >
         <AstronautBackground />
+        <ScrollUI />
         <div className="relative z-10">
           <NavBar />
           <AnimatePresence mode="wait">
